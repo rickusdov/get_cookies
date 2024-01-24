@@ -40,7 +40,7 @@ def get_cookies(username, password):
     cookies = ''
     for dict in my_dict:
         if dict['name'] == 'MYAS24-JWT':
-            cookies += (dict['name']+': '+dict['value'])
+            cookies += (dict['name']+' ='+dict['value'])
     upload(cookies, username)
     driver.close()
 def upload(cookies, username):
